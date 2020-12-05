@@ -1,7 +1,8 @@
+# hafta-3-4
+Java Collection Framework, Java8 Features, Reflection, I/O Operations, MultiThreading
 
-# Ödev Soruları
 
-## Not: Tüm soruları tek bir Java projesi içinde çözüp gönderebilirsiniz.
+# Ödev Sorusu
 
 **Açıklama1:** Soruların her biri ayrı ayrı algoritmaları ifade eder. Algoritma dediğimiz kavram bilgisayar programcılığı için çok önemli bir konudur.
 Algoritma düşünce sistematiğini geliştirmeyen bir yazılımcı yazılım kütüphanelerini, programlama dillerini öğrenerek iyi bir programcı olma yolunda çok ileriye gidemez.
@@ -15,45 +16,40 @@ Yardımlaşma için birbirinizden ve benden yardım alabilirsiniz. Tek şart cop
 
 #Sorular
 
-**Soru1:** String tipinde sabit bir şifre değişkeni oluşturun. Örneğin: String password = "12345"; gibi. Ardından, kullanıcıdan klavyeden bir şifre girmesini isteyin.
-Girilen şifre ile değişkende tuttuğunuz değeri kıyaslayın. Eğer, iki değer birbirine eşitse ekrana "Giriş Başarılı!", değilse "Giriş Başarısız" yazdırın.
+**Soru1:** 
+Çift yönlü LinkedList algoritmasını Generic sınıfları kullanarak kendiniz yazınız. (Java Collection Framework içindeki hazır LinkedList'i kullanmaMAnız gerekmektedir.)
 
-**Soru2:** Kullanıcının konsol ekrandan 4 temel matematiksel işlemi yapabildiği bir program yazmanız bekleniyor. Program aşağıdaki özellikleri sağlamalıdır.
+**Soru2:** 
+Book isminde bir sınıf tasarlayınız. Bu sınıf Comparable interface'den kalıtım alıp "compareTo" metodunu override ediniz. Bu metodun içinde kitabı A'dan Z'ye isme göre sıralayan kodu yazınız. Bu sınıftan 5 tane nesne oluşturun ve nesneleri Set tipinde bir yapısında saklayınız. Sonra ikinci kez Set tipinden bir veri yapısı kullanın ve kitapları sayfa sayısına göre sıralamasını sağlayınız.
 
-- Yapılabilecek temel işlemler: Toplama, Çıkarma, Çarpma, Bölme
-- Kullanıcıya 4 işlemden birini seçeceği menüyü konsol ekrana yazdırın. Örneğin: 1-Toplama, 2-Çıkarma vb...
-- Ardından kullanıcıdan 2 adet tamsayı tipinde sayı girmesini isteyin. Bu girilen iki sayıyı değişkenlerde saklayın.
-- Seçilen işlem tipine göre matematiksel işlemi yapın ve konsol ekranına yazdırın.
+Book sınıfı kitap ismi, sayfa sayısı, yazarın ismi, yayın tarihi değişkenlerinden oluşmaktadır.
 
-**Soru3:** Rastgele sayılardan oluşmuş 100 elemanlık tamsayı dizisindeki tüm elemanların ortalamasını alacak programı geliştirin. Programı yazarken aşağıdaki özelliklere uygun yazınız.
-
-- Rastgele oluşan 10 elemanlık sayı kümesi program yeniden her çalıştığında değişsin. Sabit elemanlı bir dizi vermeyin!
-- Ortalama almayı sağlayacak kodu bir fonksiyon halinde tasarlayın. İçine diziyi girdi (input) olarak alsın.
-- Ortalama alan fonksiyon ortalamayı ondalıklı sayı olarak döndürsün. (return) etsin.
-
-**Soru4:** Aşağıdaki görüntüyü konsol ekranına yazdıran algoritmayı tasarlayınız.
-
-<img width="195" alt="Screen Shot 2020-03-03 at 00 37 53" src="https://user-images.githubusercontent.com/2838457/75720412-806c3f80-5ce7-11ea-8b8b-d740b6363564.png">
-
-**Soru5:** Rastgele sayılardan oluşan 100 elemanlık tamsayı dizisi oluşturun. Ardından tek ve çift sayıları bulan bir program yazın.
-
-**Soru6:** PDFDocument isminde bir sınıf yaratın. Ardından, WordDocument isminde bir sınıf tasarlayın. Bu iki sınıf içinde String body = ""; isminde bir tane nesne değişkeni tanımlayın.
-Tanımlanan bu "body" isimli değişkeninin tutacağı veriyi kurucu metot vasıtasıyla gönderin. Sınıfın içinde "body" değişkenine ait değeri dışarıya döndürecek "getBody" isimli bir metot yazın.
-
-Yukarıdaki işlemlerin ardından Printer isminde bir sınıf tanımlayın. "printPDFDocument" isminde PDF dokümanına ait "body" bilgisini konsol ekrana yazdıran bir metot tanımlayın.
-Aynı şekilde "printWordDocument" isminde Word dokümanını konsol ekrana yazdıran bir metot tanımlayın. Bu metotları "static" tanımlamanız gerekmektedir.
-
-Ardından main fonksiyonu içinde PDFDocument ve WordDocument nesneleri oluşturun. Bu nesnelere ait body bilgisini ekrana yazdırmak için "Printer" sınıfının metotlarını kullanın.
-
-Not: Print sınıfı içinde niçin statik metot kullandığımızı kısaca açıklayın.
-
-**Soru7:**
-
-Aşağıda yer alan sınıfları Java koduyla tasarlayınız. Katılım mantığını da kullanın.
-
-<img width="1065" alt="Screen Shot 2020-11-10 at 22 24 50" src="https://user-images.githubusercontent.com/2838457/98723607-ab914d80-23a3-11eb-9d27-daebb5670f72.png">
+**Soru3:** 
+Kullanıcıdan öğrenci numarasını klavyeden girmesini sağlayın. Ardından öğrenciye ait isim, soyisim, yaş, bölüm bilgilerini klavyeden girin ve bu bilgileri Student sınıfında oluşturduğunuz nesnelerde saklayın. Öğrenci numarasına Student nesnesi tutulacak şekilde bir Map yapısında saklayınız.
 
 
-**Bu bir sınav değildir! Sloganımız ==> Geliştirmek için kodluyoruz ... :))**
+**Soru4:** 
+ArrayList ve LinkedList arasındaki farkları açıklayınız.
 
 
+**Soru5:** 
+a- Book sınıfından 10 tane nesne üretip bunu bir ArrayList yapısında saklayınız. stream yapısını ve lambda ifadelerini kullanarak kitap isminin karşısında yazar ismi olacak şekilde yeni bir Map<String, String> oluşturacak şekilde yazınız.
+
+b- Bu 10 elemanlık Book listesinden sayfa sayısı 100'den fazla olan kitapları filtreleyen ve yeni bir liste olarak verecek geliştirmeyi yapınız. (Stream ve Lambda ifadeleri kullanabilirsiniz.)
+
+
+**Soru6:** 
+Öğrenciye ait öğrenci no, isim, soyisim, yaş, bölüm bilgilerini klavyeden okuyup dosyaya yazan bir program yazınız. Aynı programın içinde dosyayı okuyup tüm kayıtları ekrana yazan alt bir fonksiyon tasarlayınız.
+
+
+**Soru7:** 
+1'den 10000 (10 bin)'e kadar olan sayılardan oluşan bir ArrayList oluşturunuz. Ardından, bu ArrayList'teki 10 bin elemanı 2500 eleman olacak şekilde 4 eşit parçaya ayırınız. Bu 4 ayrı 2500 elemanlık ArrayList'ler içinde tek ve çift sayıları bulan 4 ayrı Thread tasarlayınız.
+
+- 4 Thread bulduğu çift sayıları ortak bir ArrayList'e ekleyecektir.
+- 4 Thread bulduğu tek sayıları ortak bir ArrayList'e ekleyecektir.
+- Tek ve çift sayıları tutan ArrayList'ler ilk oluşturulduklarında boş olacaklardır. Ve iki tane ArrayList olacaklardır.
+- 4 Thread kendine ait 2500 elemanlık ArrayList'i işlemeye başlayınca tek ve çift sayı ArrayList'lerini dolduracaktır.
+
+
+
+**Bu bir sınav değildir! Geliştirmek için kodluyoruz ... :))**
